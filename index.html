@@ -1,0 +1,1140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ojas &amp; Prerana · 02.02.27</title>
+<meta name="description" content="You're cordially invited to celebrate the wedding of Ojas Mishra &amp; Prerana Dilip · 2 February 2027 · Ramakrishna Mandir, Chennai">
+<meta property="og:title" content="Ojas &amp; Prerana · Wedding Invitation">
+<meta property="og:description" content="02.02.27 · Ramakrishna Mandir, Chennai">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+  :root{--red:#a3161a;--red-d:#7f0f13;--pink:#f8e3e2;--pink-2:#f2c9c7;--bg:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--red);font-family:'Gaegu',cursive;font-size:19px;line-height:1.35;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+  body.locked{overflow:hidden;height:100svh}
+  button,input,select,textarea{font:inherit;color:inherit}
+  a{color:inherit}
+  .page{max-width:760px;margin:0 auto;padding:0 20px}
+  .script{font-family:'Yellowtail',cursive;font-weight:400}
+  .caps{text-transform:uppercase;letter-spacing:.06em}
+  h2{font-weight:700;font-size:clamp(30px,7vw,40px);line-height:1;text-transform:uppercase;text-align:center;letter-spacing:.01em}
+  .center{text-align:center}
+  .small{font-size:15px;line-height:1.35}
+  .btn{display:inline-block;background:var(--red);color:#fff;border:0;border-radius:6px;padding:10px 26px;font-weight:700;font-size:15px;letter-spacing:.08em;
+       text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .15s,background .3s,box-shadow .3s}
+  .btn:hover{background:var(--red-d);box-shadow:0 6px 16px rgba(163,22,26,.25)}
+  .btn:active{transform:scale(.96)}
+  .btn.line{background:none;color:var(--red);border:1.5px solid var(--red)}
+  .btn.line:hover{background:var(--red);color:#fff}
+
+  /* line art */
+  .ill{display:block;width:100%;height:auto;overflow:visible}
+  .ill *{fill:none;stroke:var(--red);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .ill [fill="#fff"]{fill:var(--bg)}
+  .ill .soft{stroke-width:1.1}
+  .ill text{stroke:none;fill:var(--red)}
+  .draw *{stroke-dasharray:1;stroke-dashoffset:1}
+  .draw.in *{stroke-dashoffset:0;transition:stroke-dashoffset 2.4s cubic-bezier(.4,0,.2,1)}
+
+  #ill-table.draw.in *{transition-duration:1.4s}
+  .draw .flame{opacity:0;transition:opacity .6s}
+  .draw.in .flame{opacity:1;transition-delay:inherit}
+
+  /* living line art: gentle loops after the drawing appears (paused while off-screen) */
+  .ill:not(.vis) *{animation-play-state:paused!important}
+  .ill .sway{transform-box:fill-box;transform-origin:50% 100%;animation:sway 5s ease-in-out infinite}
+  .ill .sway.slow{animation-duration:6.5s}
+  @keyframes sway{0%,100%{rotate:-2.5deg}50%{rotate:2.5deg}}
+  .ill .flame{fill:#f6b7a8;transform-box:fill-box;transform-origin:50% 100%;animation:flicker .9s ease-in-out infinite alternate}
+  @keyframes flicker{0%{scale:1 1;rotate:-5deg}50%{scale:.85 1.18}100%{scale:1.06 .9;rotate:5deg}}
+  .ill .beat{transform-box:fill-box;transform-origin:center;animation:hb 1.8s ease-in-out infinite}
+  @keyframes hb{0%,45%,100%{scale:1}15%{scale:1.22}30%{scale:1.08}}
+  .ill .bubble{animation:bub 2.4s ease-in infinite}
+  .ill .bubble:nth-of-type(2){animation-delay:-.8s}.ill .bubble:nth-of-type(3){animation-delay:-1.6s}
+  @keyframes bub{0%{translate:0 8px;opacity:0}25%{opacity:1}100%{translate:0 -22px;opacity:0}}
+  .ill .twinkle{animation:tw 1.4s ease-in-out infinite}
+  @keyframes tw{50%{opacity:.1}}
+  .ill .clinkL,.ill .clinkR{transform-box:fill-box;transform-origin:50% 100%;animation:clinkL 3.2s ease-in-out infinite}
+  .ill .clinkR{animation-name:clinkR}
+  @keyframes clinkL{0%,65%,100%{rotate:0deg}78%{rotate:7deg}86%{rotate:-1deg}}
+  @keyframes clinkR{0%,65%,100%{rotate:0deg}78%{rotate:-7deg}86%{rotate:1deg}}
+  .ill .wing{transform-box:fill-box;transform-origin:20% 100%;animation:flap .55s ease-in-out infinite alternate}
+  @keyframes flap{to{rotate:-24deg;scale:1 .75}}
+  .ill .bob{animation:bob 2.6s ease-in-out infinite}
+  .ill .bob.b2{animation-delay:-1.3s}
+  @keyframes bob{50%{translate:0 -7px}}
+  .ill .drape{transform-box:fill-box;transform-origin:50% 0;animation:drape 4s ease-in-out infinite}
+  @keyframes drape{50%{scale:1 1.07}}
+  .ill .wiggle{transform-box:fill-box;transform-origin:50% 25%;animation:wig 2.6s ease-in-out infinite}
+  @keyframes wig{0%,60%,100%{rotate:0deg}70%{rotate:-7deg}80%{rotate:6deg}90%{rotate:-2deg}}
+  .ill .hop{transform-box:fill-box;transform-origin:50% 100%;animation:hop 3.2s ease-in-out infinite}
+  @keyframes hop{0%,68%,100%{translate:0 0;scale:1}76%{translate:0 -9px;scale:1.02 .98}84%{translate:0 0;scale:1.04 .95}90%{scale:1}}
+  .ill .tilt{transform-box:fill-box;transform-origin:50% 0;animation:tilt 5s ease-in-out infinite}
+  @keyframes tilt{50%{rotate:2.5deg}}
+
+  /* handwriting reveal for script lettering */
+  .reveal .script,.hero h1{clip-path:inset(-30% 100% -30% -5%);transition:clip-path 1.8s cubic-bezier(.6,0,.3,1) .35s}
+  .reveal.in .script,.shown .hero h1{clip-path:inset(-30% -8% -30% -5%)}
+
+  /* ---------- envelope opener ---------- */
+  .intro{position:fixed;inset:0;z-index:30;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:opacity 1s .2s,visibility 1s .2s}
+  .intro.gone{opacity:0;visibility:hidden}
+  .intro .dear{font-size:34px;min-height:1px}
+  .intro .lead{font-size:16px}
+  .env{width:min(84vw,360px);overflow:visible;margin:18px 0 6px}
+  .env *{stroke:var(--red);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .env .flapF{transform-origin:50% 60px;transform-box:view-box;transition:transform .45s ease-in}
+  .env .flapB{transform-origin:50% 60px;transform-box:view-box;transform:scaleY(0);transition:transform .45s ease-out .45s}
+  .env .letter{transition:transform 1s cubic-bezier(.3,.7,.2,1) .9s}
+  .env .seal{transform-origin:160px 150px;transform-box:view-box;transition:transform .3s,opacity .3s;animation:beat 1.6s ease-in-out infinite}
+  .opening .env .seal{animation:none;transform:scale(1.5);opacity:0}
+  .opening .env .flapF{transform:scaleY(0)}
+  .opening .env .flapB{transform:scaleY(1)}
+  .opening .env .letter{transform:translateY(-92px)}
+  @keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.15)}30%{transform:scale(1)}45%{transform:scale(1.1)}}
+  .tap{font-size:15px;letter-spacing:.2em;text-transform:uppercase;animation:pulse 2s ease-in-out infinite}
+  .opening .tap{opacity:0;animation:none}
+  @keyframes pulse{50%{opacity:.35}}
+
+  canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:40}
+
+  /* ---------- nav ---------- */
+  nav{display:flex;justify-content:center;gap:clamp(18px,6vw,60px);padding:22px 0 10px;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+  nav a{text-decoration:none;position:relative}
+  nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1.5px;background:var(--red);transition:right .3s}
+  nav a:hover::after{right:0}
+
+  /* ---------- hero ---------- */
+  .hero{text-align:center;padding:26px 0 0}
+  .hero .lead{font-size:16px;font-weight:700;letter-spacing:.05em}
+  .hero h1{font-size:clamp(48px,13vw,74px);line-height:1.1;margin:8px 0 4px;transform:rotate(-3deg)}
+  .hero .date{font-weight:700;font-size:clamp(30px,7vw,40px);letter-spacing:.04em}
+  .hero .place{font-weight:700;font-size:15px;letter-spacing:.08em}
+  .count{display:flex;justify-content:center;gap:16px;margin-top:12px;font-size:15px}
+  .count b{display:block;font-size:26px;line-height:1;font-variant-numeric:tabular-nums}
+  .hero .ill{margin-top:6px}
+
+  .married{text-align:center;padding:40px 0 10px}
+  .married h2{margin-bottom:16px}
+  .frame{width:min(78%,330px);margin:0 auto 18px;transform:rotate(-2deg);transition:transform .5s}
+  .frame:hover{transform:rotate(1deg) scale(1.02)}
+  .married p{max-width:430px;margin:0 auto;font-size:17px;font-weight:700;text-transform:uppercase;line-height:1.35}
+  .married .sign{font-size:34px;margin-top:6px;text-transform:none}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:34px;padding:50px 0 30px;text-align:center}
+  .two .ill{width:110px;margin:0 auto 10px}
+  .two h2{font-size:clamp(26px,5.5vw,34px);margin-bottom:10px}
+  .two p{font-size:16px;text-transform:uppercase;margin-bottom:16px}
+  .two .btn{width:100%;max-width:260px}
+  .two > div{transition:transform .3s}
+  .two > div:hover{transform:translateY(-4px)}
+
+  /* RSVP */
+  .rsvp{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;padding:40px 0;align-items:start}
+  .rsvp .left{text-align:center}
+  .rsvp .left h2{margin:4px 0 10px}
+  .rsvp .left p{font-size:16px;text-transform:uppercase}
+  .rsvp .by{font-weight:700;margin-top:10px}
+  .rsvp h3{font-size:32px;font-weight:700;margin-bottom:10px}
+  form label{display:block;font-weight:700;font-size:16px;margin:12px 0 5px}
+  .field{width:100%;border:1.5px solid var(--pink-2);background:var(--bg);border-radius:6px;padding:8px 12px;font-size:18px;outline:none;transition:border-color .3s}
+  .field:focus{border-color:var(--red)}
+  .opts{display:grid;gap:5px}
+  .opt{display:flex;align-items:center;gap:10px;background:var(--pink);border:1.5px solid transparent;border-radius:6px;padding:7px 12px;cursor:pointer;font-size:17px;transition:all .25s;text-align:left}
+  .opt::before{content:"";width:14px;height:14px;border-radius:50%;border:1.5px solid var(--red);flex:none;transition:all .25s}
+  .opt[aria-checked="true"]{border-color:var(--red);background:var(--bg)}
+  .opt[aria-checked="true"]::before{background:var(--red);box-shadow:inset 0 0 0 2.5px #fff}
+  .stepper{display:flex;align-items:center;gap:14px}
+  .stepper button{width:36px;height:36px;border-radius:6px;border:1.5px solid var(--red);background:var(--bg);color:var(--red);font-size:20px;cursor:pointer;font-weight:700}
+  .stepper output{font-size:24px;font-weight:700;min-width:24px;text-align:center}
+  form .btn{width:100%;margin-top:16px;padding:12px}
+  .fine{font-size:13px;text-align:center;margin-top:6px;opacity:.75}
+  .thanks{display:none;text-align:center;padding:40px 10px}
+  .thanks .script{font-size:40px;display:block}
+  .sent form{display:none}
+  .sent .thanks{display:block;animation:rise .8s both}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}}
+
+  .garland{margin:30px -20px 0;position:relative}
+  .lantern{cursor:pointer;transform-box:fill-box;transform-origin:50% 0;animation:swing 4s ease-in-out infinite}
+  .lantern:nth-child(2n){animation-duration:4.8s;animation-delay:-1s}
+  .lantern:nth-child(3n){animation-duration:5.4s;animation-delay:-2s}
+  .lantern .glow{fill:#ffcf5c!important;stroke:none!important;opacity:0;transition:opacity .5s;filter:blur(3px)}
+  .lantern.lit .glow{opacity:.85}
+  @keyframes swing{0%,100%{rotate:-4deg}50%{rotate:4deg}}
+  .lhint{text-align:center;font-size:14px;opacity:.7;margin-top:2px}
+  .presence{text-align:center;padding:16px 0 10px}
+  .presence p{font-size:16px;text-transform:uppercase;max-width:420px;margin:0 auto}
+  .presence .script{font-size:clamp(44px,11vw,60px);display:block;margin-top:10px;transform:rotate(-3deg)}
+
+  /* ---------- details ---------- */
+  .divider{height:2px;background:var(--red);margin:40px -20px 0;opacity:.9}
+  .details{padding-top:40px}
+  .details .lead{text-align:center;font-weight:700;font-size:17px;text-transform:uppercase}
+  .arch{max-width:420px;margin:6px auto 0}
+  .arch-title{text-align:center;font-size:34px;margin-top:-6px}
+  .tri{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:16px;align-items:center;padding:30px 0}
+  .tri h2{font-size:clamp(24px,5vw,30px);margin-bottom:8px}
+  .tri .k{font-weight:700;font-size:15px;text-transform:uppercase;margin-top:8px}
+  .tri p{font-size:16px}
+  .tri .center .script{font-size:28px;display:block}
+  .tri a.mapl{font-weight:700;font-size:14px;text-transform:uppercase;display:inline-block;margin-top:10px}
+
+  .timeline{display:grid;grid-template-columns:1fr 1fr;gap:28px 30px;max-width:560px;margin:22px auto 0;text-align:center}
+  .tl{transition:transform .3s}
+  .tl:hover{transform:scale(1.04)}
+  .tl b{display:block;font-size:30px;line-height:1}
+  .tl .what{font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+  .tl p{font-size:15px;margin-top:4px}
+
+  .dress{text-align:center;padding:50px 0 10px}
+  .dress p{font-size:16px;text-transform:uppercase;margin:8px 0 14px}
+  .sw{display:flex;justify-content:center;gap:26px}
+  .sw span{display:flex;gap:0}
+  .sw i{width:34px;height:34px;border-radius:50%;display:block;transition:transform .3s;cursor:pointer;position:relative}
+  .sw i + i{margin-left:-10px}
+  .sw i:hover{transform:translateY(-6px) scale(1.1)}
+  .sw i::after{content:attr(data-n);position:absolute;top:110%;left:50%;transform:translateX(-50%);font-size:13px;white-space:nowrap;opacity:0;transition:opacity .3s;font-style:normal}
+  .sw i:hover::after{opacity:1}
+
+  .venue{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:50px 0 20px;align-items:center}
+  .mapcard{position:relative;padding:14px;text-align:center}
+  .mapcard svg.edge{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+  .mapcard svg.edge path{fill:none;stroke:var(--red);stroke-width:2}
+  .mapcard p{font-size:14px;text-transform:uppercase;position:relative;margin-bottom:8px}
+  .mapcard iframe{position:relative;width:100%;height:190px;border:0;border-radius:4px;filter:sepia(.25) saturate(.9);display:block}
+  .mapcard .btn{position:relative;margin-top:10px}
+  .dir{text-align:center}
+  .dir .script{font-size:28px}
+  .dir h3{font-size:22px;font-weight:700;text-transform:uppercase;margin-top:4px}
+  .dir p{font-size:15px;text-transform:uppercase;max-width:280px;margin:4px auto 0}
+  .dir hr{border:0;border-top:1.5px solid var(--red);width:60%;margin:16px auto}
+
+  .families{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:30px 0;align-items:center;text-align:center}
+  .families .script{font-size:30px}
+  .families h3{font-size:22px;font-weight:700;text-transform:uppercase;margin-top:12px}
+  .families p{font-size:16px;text-transform:uppercase}
+  .families .ill{width:110px;margin:0 auto}
+  .gift h2{font-size:clamp(26px,5vw,32px)}
+  .gift p{margin:6px 0 12px}
+  .hearts{position:relative}
+  .hearts .float{position:absolute;left:50%;top:0;pointer-events:none;font-size:20px;animation:floatUp 1.4s ease-out forwards}
+  @keyframes floatUp{to{transform:translate(var(--dx),-120px) scale(1.5);opacity:0}}
+  .bcount{font-size:15px;min-height:20px;margin-top:6px}
+
+  .stay{text-align:center;padding:20px 0}
+  .stay > p{font-size:16px;text-transform:uppercase;max-width:520px;margin:10px auto 22px}
+  .hotels{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .hotel h3{font-size:19px;font-weight:700;text-transform:uppercase;line-height:1.1;min-height:42px}
+  .hotel p{font-size:15px;margin:6px 0 12px}
+  .hotel .btn{width:100%;font-size:12px;padding:8px}
+  .final{text-align:center;padding:40px 0 30px}
+  .final p{font-size:17px;text-transform:uppercase;margin-bottom:12px}
+  .final .script{font-size:clamp(48px,12vw,66px);display:block;margin-top:18px;transform:rotate(-3deg)}
+
+  .contact{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:center;padding:24px 0 34px;text-align:center}
+  .contact h3{font-size:28px;font-weight:700;text-transform:uppercase;text-align:left}
+  .contact .script{font-size:28px}
+  .contact a{font-size:14px;text-transform:uppercase}
+  footer{background:var(--red);color:#fff;text-align:center;padding:10px;font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+  footer a{text-decoration:none}
+
+  .music{position:fixed;right:max(14px,calc(50% - 366px));bottom:52px;z-index:20;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--red);background:var(--bg);
+         display:flex;align-items:flex-end;justify-content:center;gap:3px;padding-bottom:14px;cursor:pointer;box-shadow:0 6px 16px rgba(163,22,26,.18);opacity:0;pointer-events:none;transition:opacity .8s}
+  .shown .music{opacity:1;pointer-events:auto}
+  .music i{width:3px;height:6px;background:var(--red);border-radius:2px}
+  .music.on i{animation:eq .8s ease-in-out infinite}
+  .music.on i:nth-child(2){animation-delay:.2s}.music.on i:nth-child(3){animation-delay:.4s}
+  @keyframes eq{50%{height:18px}}
+  .toast{position:fixed;left:50%;bottom:108px;z-index:20;transform:translate(-50%,16px);opacity:0;pointer-events:none;background:var(--red);color:#fff;font-size:15px;padding:8px 16px;border-radius:6px;white-space:nowrap;transition:all .5s}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ================= easter eggs ================= */
+  .ill .hit{stroke:none;fill:transparent;pointer-events:all;cursor:pointer}
+  .ill .nostroke{stroke:none}
+  .ill .cut{opacity:0;transition:opacity .4s}
+  .ill .cut.on{opacity:1}
+  .ill .hidden-name{stroke:none;fill:var(--red);opacity:.5;cursor:pointer;pointer-events:all;transition:opacity .4s}
+  .ill .hidden-name.found{opacity:1}
+  .ill .steam{opacity:0;transition:opacity .6s}
+  .ill .on .steam{opacity:1}
+  .ill .on .steam path{animation:steam 2s ease-in-out infinite}
+  .ill .on .steam path + path{animation-delay:-1s}
+  @keyframes steam{0%{translate:0 4px;opacity:0}40%{opacity:1}100%{translate:0 -6px;opacity:0}}
+  #names{cursor:pointer;-webkit-user-select:none;user-select:none}
+  #amp{display:inline-block}
+  #amp.heart{color:#c9363b;animation:hb 1.2s ease-in-out infinite}
+
+  .flip{display:grid;width:max-content;max-width:100%;margin:12px auto 0;perspective:700px;cursor:pointer;-webkit-user-select:none;user-select:none}
+  .flip > *{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;transition:transform .8s cubic-bezier(.4,.2,.2,1)}
+  .flip .count{margin-top:0}
+  .cal{transform:rotateY(180deg);display:flex;align-items:center;justify-content:center;gap:14px;border:1.5px solid var(--red);border-radius:6px;padding:6px 16px;position:relative;align-self:center}
+  .cal::before{content:"";position:absolute;top:-6px;left:18%;right:18%;height:9px;background:radial-gradient(circle,var(--red) 2.5px,transparent 3px) 0 0/14px 9px repeat-x}
+  .flip.on .count{transform:rotateY(-180deg)}
+  .flip.on .cal{transform:none}
+  .cal .m{font-size:14px;text-transform:uppercase;line-height:1.1;text-align:right}
+  .cal .d{position:relative;font-size:32px;line-height:1;font-weight:700;padding:0 6px}
+  .cal .d svg{position:absolute;left:-10px;top:-9px;width:calc(100% + 20px);height:calc(100% + 18px);overflow:visible}
+  .cal .d path{fill:none;stroke:var(--red);stroke-width:2;stroke-linecap:round}
+  .cal .t{font-size:14px;line-height:1.15;text-align:left}
+
+  .note{position:fixed;left:50%;bottom:112px;z-index:45;width:min(92vw,360px);background:var(--bg);border:1.5px solid var(--red);border-radius:10px;padding:16px 22px;text-align:center;
+        box-shadow:0 0 0 4px var(--bg),0 0 0 5.5px var(--red),0 18px 40px rgba(0,0,0,.18);transform:translate(-50%,30px) rotate(-1deg);opacity:0;pointer-events:none;transition:all .45s cubic-bezier(.3,1.4,.5,1)}
+  .note.show{opacity:1;pointer-events:auto;transform:translate(-50%,0) rotate(-1deg)}
+  .note .nt{font-size:28px;line-height:1.15;padding:0 14px}
+  .note .nb{font-size:17px;margin-top:4px}
+  .note .na{margin-top:10px}
+  .note .na .btn{padding:7px 16px;font-size:13px}
+  .x{position:absolute;top:4px;right:8px;border:0;background:none;color:var(--red);font-size:26px;cursor:pointer;line-height:1}
+  .modal{position:fixed;inset:0;z-index:50;background:rgba(40,10,12,.35);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .35s}
+  .modal.show{opacity:1;pointer-events:auto}
+  .sheet{position:relative;width:min(100%,420px);max-height:90svh;overflow:auto;background:var(--bg);border:1.5px solid var(--red);border-radius:10px;padding:26px 24px;transform:scale(.9) rotate(-1deg);transition:transform .45s cubic-bezier(.3,1.4,.5,1)}
+  .modal.show .sheet{transform:rotate(-1deg)}
+  .mail .mh{font-size:15px;border-bottom:1.5px dashed var(--pink-2);padding:5px 0}
+  .mail .mh:first-child{font-size:13px;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+  .mail p{font-size:17px;margin-top:10px}
+  .mail .sig,.letter .sig{font-family:'Yellowtail',cursive;font-size:30px;margin-top:12px}
+  .letter h3{font-family:'Yellowtail',cursive;font-weight:400;font-size:36px;text-align:center}
+  .letter p{font-size:18px;margin-top:10px}
+
+  .badge{position:fixed;left:max(14px,calc(50% - 366px));bottom:52px;z-index:20;border:1.5px solid var(--red);background:var(--bg);color:var(--red);border-radius:999px;padding:9px 14px;
+         font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 6px 16px rgba(163,22,26,.18);transform:scale(0);transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+  .badge.show{transform:scale(1)}
+  .badge.pop{animation:bpop .6s}
+  @keyframes bpop{40%{scale:1.3}}
+  .hunt{max-width:560px;margin:0 auto;text-align:center;font-size:15px;padding:0 20px 26px;position:relative;z-index:1}
+  .hunt button{background:none;border:0;color:var(--red);text-decoration:underline;cursor:pointer;font-weight:700}
+  .fheart{background:none;border:0;color:inherit;font-size:16px;cursor:pointer;margin-left:12px;display:inline-block;transition:transform .2s}
+  .fheart:active{transform:scale(1.4)}
+
+  .flyer{position:fixed;left:0;top:28%;z-index:35;width:72px;cursor:pointer;display:none;transform:translateX(-90px);padding:8px}
+  .flyer.go{display:block;animation:fly 7.5s linear forwards}
+  .flyer svg{display:block;width:100%}
+  @keyframes fly{to{transform:translateX(calc(100vw + 90px))}}
+
+  /* midnight mode */
+  body.night{--red:#f4c3c1;--red-d:#fff;--bg:#1c1317;--pink:#33222a;--pink-2:#5a3a42}
+  .night .btn,.night footer,.night .toast,.night .btn.line:hover{color:var(--bg)}
+  .night .env [fill="#fff"]{fill:var(--bg)}
+  .night .env text{fill:var(--red)}
+  .night .mapcard iframe{filter:invert(.88) hue-rotate(180deg) sepia(.25)}
+  .stars{position:fixed;inset:0;pointer-events:none;z-index:0;display:none;
+         background-image:radial-gradient(1.6px 1.6px at 8% 12%,#fff 50%,transparent 55%),radial-gradient(1px 1px at 22% 38%,#fff 50%,transparent 55%),radial-gradient(1.3px 1.3px at 41% 9%,#fff 50%,transparent 55%),
+         radial-gradient(1px 1px at 63% 27%,#fff 50%,transparent 55%),radial-gradient(1.6px 1.6px at 82% 14%,#fff 50%,transparent 55%),radial-gradient(1px 1px at 92% 46%,#fff 50%,transparent 55%),
+         radial-gradient(1.2px 1.2px at 12% 66%,#fff 50%,transparent 55%),radial-gradient(1px 1px at 34% 84%,#fff 50%,transparent 55%),radial-gradient(1.5px 1.5px at 57% 61%,#fff 50%,transparent 55%),
+         radial-gradient(1px 1px at 76% 79%,#fff 50%,transparent 55%),radial-gradient(1.3px 1.3px at 95% 90%,#fff 50%,transparent 55%),radial-gradient(1px 1px at 48% 45%,#fff 50%,transparent 55%)}
+  .night .stars{display:block;animation:twinkle 3s ease-in-out infinite alternate}
+  @keyframes twinkle{to{opacity:.35}}
+  .page{position:relative;z-index:1}
+
+  @media (max-width:640px){
+    .two,.rsvp,.venue,.families{grid-template-columns:1fr}
+    .two{gap:44px}
+    .tri{grid-template-columns:1fr;gap:26px;text-align:center}
+    .tri .center{order:-1}
+    .tri .center .ill{max-width:240px;margin:0 auto}
+    .hotels{grid-template-columns:1fr}
+    .hotel h3{min-height:0}
+    .contact{grid-template-columns:1fr 1fr}
+    .contact h3{grid-column:1/-1;text-align:center}
+    .timeline{gap:24px 16px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition-duration:.01s!important;transition-delay:0s!important}
+  }
+</style>
+<noscript><style>.intro{display:none}body.locked{overflow:auto;height:auto}.reveal{opacity:1;transform:none}.draw *{stroke-dasharray:none}</style></noscript>
+</head>
+<body class="locked">
+
+<!-- shared hand-drawn wobble -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7"/>
+    <feDisplacementMap in="SourceGraphic" scale="2.2"/>
+  </filter>
+</svg>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- ===== Envelope opener ===== -->
+<div class="intro" id="intro">
+  <p class="dear script" id="dear"></p>
+  <p class="lead caps">You’re cordially invited</p>
+  <svg class="env" viewBox="0 0 320 230" aria-hidden="true">
+    <path d="M20 60 H300 V200 H20 Z" fill="#fff"/>
+    <g class="flapB"><path d="M20 60 L160 -30 L300 60 Z" fill="#fff"/></g>
+    <g class="letter">
+      <path d="M38 68 H282 V196 H38 Z" fill="#fff"/>
+      <text x="160" y="108" text-anchor="middle" font-family="Yellowtail" font-size="26" fill="#a3161a" stroke="none">Ojas &amp; Prerana</text>
+      <text x="160" y="134" text-anchor="middle" font-family="Gaegu" font-weight="700" font-size="18" fill="#a3161a" stroke="none">02 · 02 · 27</text>
+      <path d="M120 148 H200" stroke-width="1.2"/>
+    </g>
+    <path d="M20 60 L160 140 L300 60 V200 H20 Z" fill="#fff"/>
+    <path d="M20 200 L135 128 M300 200 L185 128" stroke-width="1.4"/>
+    <g class="flapF"><path d="M20 60 L160 150 L300 60 Z" fill="#fff"/></g>
+    <g class="seal">
+      <circle cx="160" cy="150" r="17" fill="#a3161a" stroke="none"/>
+      <path d="M160 160 C150 153 148 145 154 142 C157 140 160 143 160 145 C160 143 163 140 166 142 C172 145 170 153 160 160 Z" fill="#fff" stroke="none"/>
+    </g>
+  </svg>
+  <p class="tap">Tap to open</p>
+</div>
+
+<div class="page">
+  <nav><a href="#top">Home</a><a href="#details">Details</a><a href="#story">Our story</a><a href="#rsvp">RSVP</a></nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="top">
+    <p class="lead caps" id="lead">You’re cordially invited<br>to celebrate the wedding of</p>
+    <h1 class="script" id="names">Ojas <span id="amp">&amp;</span> Prerana</h1>
+    <p class="date">02-02-27</p>
+    <p class="place caps">Ramakrishna Mandir, Chennai</p>
+    <div class="flip" id="flip">
+      <div class="count" id="count" aria-label="Countdown"><span><b id="cd">–</b>days</span><span><b id="ch">–</b>hours</span><span><b id="cm">–</b>mins</span><span><b id="cs">–</b>secs</span></div>
+      <div class="cal" id="cal" aria-hidden="true"></div>
+    </div>
+    <svg class="ill draw" id="ill-table" viewBox="0 0 640 310" role="img" aria-label="Illustration of a wedding dinner table"></svg>
+  </header>
+
+  <section class="married reveal" id="story">
+    <h2>We are<br>getting married</h2>
+    <svg class="ill draw frame" id="ill-frame1" viewBox="0 0 300 220" role="img" aria-label="Framed illustration of two champagne glasses"></svg>
+    <p>With joyful hearts, we invite you to be part of our wedding celebration. Your presence would mean the world to us as we begin this beautiful journey together.</p>
+    <p class="small" style="margin-top:12px">With love,</p>
+    <p class="sign script">Ojas &amp; Prerana</p>
+  </section>
+
+  <section class="two">
+    <div class="reveal">
+      <svg class="ill draw" id="ill-bouquet" viewBox="0 0 160 200" aria-hidden="true"></svg>
+      <h2>Wedding details</h2>
+      <p>Every detail of our wedding day has been lovingly planned. Here’s the schedule, venue and everything you need so you don’t miss a moment.</p>
+      <a class="btn" href="#details">View details</a>
+    </div>
+    <div class="reveal">
+      <svg class="ill draw" id="ill-doves" viewBox="0 0 200 160" aria-hidden="true"></svg>
+      <h2>Our story</h2>
+      <p>Two desks on the same office floor, a shared love for chai, and hellos that turned into forever. A story filled with laughter, love and late-evening conversations.</p>
+      <a class="btn" href="#story" id="storyBtn">Read our story</a>
+    </div>
+  </section>
+
+  <!-- ===== RSVP ===== -->
+  <section class="rsvp" id="rsvp">
+    <div class="left reveal">
+      <svg class="ill draw" id="ill-polaroid" viewBox="0 0 260 240" role="img" aria-label="Polaroid illustration with wedding rings"></svg>
+      <h2>Kindly<br>respond</h2>
+      <p>We would be honoured by your presence. Please let us know if you will be joining us.</p>
+      <p class="by">Please respond by<br>10 January 2027</p>
+    </div>
+    <div class="reveal" id="rsvpBox">
+      <h3>RSVP</h3>
+      <form id="rsvpForm">
+        <label for="name">Your name</label>
+        <input class="field" id="name" name="name" required autocomplete="name">
+        <label>Will you be attending our wedding?</label>
+        <div class="opts" role="radiogroup" data-group="attend">
+          <button type="button" class="opt" role="radio" aria-checked="true" data-v="yes">Joyfully accept</button>
+          <button type="button" class="opt" role="radio" aria-checked="false" data-v="no">Regretfully decline</button>
+        </div>
+        <div id="moreFields">
+          <label>Choice of meal</label>
+          <div class="opts" role="radiogroup" data-group="meal">
+            <button type="button" class="opt" role="radio" aria-checked="true" data-v="Vegetarian">Vegetarian</button>
+            <button type="button" class="opt" role="radio" aria-checked="false" data-v="Jain">Jain</button>
+            <button type="button" class="opt" role="radio" aria-checked="false" data-v="Non-vegetarian">Non-vegetarian</button>
+          </div>
+          <label>How many guests will you bring? (including yourself)</label>
+          <div class="stepper"><button type="button" data-d="-1" aria-label="Fewer guests">−</button><output id="guests">1</output><button type="button" data-d="1" aria-label="More guests">+</button></div>
+        </div>
+        <button class="btn" type="submit">RSVP</button>
+        <p class="fine">Your reply opens WhatsApp, ready to send.</p>
+      </form>
+      <div class="thanks"><span class="script">Thank you!</span><p>Your reply means the world to us.</p></div>
+    </div>
+  </section>
+
+  <svg class="ill draw garland" id="ill-garland" viewBox="0 0 640 170" role="img" aria-label="String of lanterns, tap to light them"></svg>
+  <p class="lhint">Tap the lanterns to light them ✨</p>
+  <section class="presence reveal">
+    <p>Your presence is the greatest gift we could ask for. We truly hope you can celebrate this special day with us.</p>
+    <span class="script">Ojas &amp; Prerana</span>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== Wedding details ===== -->
+  <section class="details" id="details">
+    <p class="lead">Everything you need to know<br>for our special day</p>
+    <svg class="ill draw arch" id="ill-arch" viewBox="0 0 600 320" role="img" aria-label="Illustration of a wedding arch with chairs"></svg>
+    <p class="arch-title reveal"><span class="script">Wedding Details</span></p>
+
+    <div class="tri">
+      <div class="center-text reveal" style="text-align:center">
+        <h2>Ceremony &amp; reception</h2>
+        <p class="k">Date</p><p>Tuesday, 2 February 2027</p>
+        <p class="k">Time</p><p>9:00 AM – 10:00 PM</p>
+      </div>
+      <div class="center reveal" style="text-align:center">
+        <svg class="ill draw" id="ill-cake" viewBox="0 0 300 260" role="img" aria-label="Illustration of a cake table"></svg>
+        <span class="script">Time &amp; Date</span>
+      </div>
+      <div class="reveal" style="text-align:center">
+        <h2>Ramakrishna Mandir</h2>
+        <p>Mylapore, Chennai,<br>Tamil Nadu, India</p>
+        <a class="mapl" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Sri+Ramakrishna+Math+Mylapore+Chennai">See on Google Maps</a>
+      </div>
+    </div>
+
+    <h2 class="reveal">Wedding timeline</h2>
+    <div class="timeline reveal">
+      <div class="tl"><b>9:00 AM</b><span class="what">Baraat &amp; welcome</span><p>Join us as the groom arrives with music, dance and lots of joy.</p></div>
+      <div class="tl"><b>10:30 AM</b><span class="what">Wedding ceremony</span><p>The sacred vows, surrounded by family and blessings.</p></div>
+      <div class="tl"><b>1:00 PM</b><span class="what">Wedding lunch</span><p>A traditional feast to celebrate the newlyweds.</p></div>
+      <div class="tl"><b>7:00 PM</b><span class="what">Reception &amp; dinner</span><p>An evening of music, dinner and dancing under the lights.</p></div>
+    </div>
+
+    <section class="dress reveal">
+      <h2>Dress code</h2>
+      <p>Traditional attire is requested.<br>Feel free to draw inspiration from these tones.</p>
+      <div class="sw">
+        <span><i style="background:#a3161a" data-n="Sindoor red"></i><i style="background:#f4a7a3" data-n="Blush"></i></span>
+        <span><i style="background:#f6efe2;box-shadow:inset 0 0 0 1.5px #e3d6bf" data-n="Ivory"></i><i style="background:#e6b54a" data-n="Marigold gold"></i></span>
+      </div>
+    </section>
+
+    <section class="venue">
+      <div class="mapcard reveal">
+        <svg class="edge" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path id="mapEdge" vector-effect="non-scaling-stroke"/></svg>
+        <p>Our celebration will take place at Ramakrishna Mandir in Mylapore, Chennai.</p>
+        <iframe loading="lazy" title="Map of the venue" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sri+Ramakrishna+Math,+Mylapore,+Chennai&amp;output=embed"></iframe>
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sri+Ramakrishna+Math+Mylapore+Chennai">Venue direction</a>
+      </div>
+      <div class="dir reveal">
+        <p class="script">Direction</p>
+        <h3>By car</h3>
+        <p>Use the map for live directions. Parking details will be shared closer to the day.</p>
+        <hr>
+        <h3>By public transport</h3>
+        <p>Autos and cabs reach Mylapore easily from anywhere in the city. Just share the venue pin with your driver.</p>
+      </div>
+    </section>
+
+    <section class="families">
+      <div class="reveal">
+        <p class="script">With love</p>
+        <p>And the blessings of</p>
+        <h3>The Mishra family</h3>
+        <p>&amp;</p>
+        <h3>The Dilip family</h3>
+      </div>
+      <div class="gift reveal">
+        <svg class="ill draw" id="ill-gift" viewBox="0 0 160 160" aria-hidden="true"></svg>
+        <h2>Gift of blessings</h2>
+        <p class="small caps">Having you with us is the greatest gift. If you wish, send your blessings with a tap!</p>
+        <div class="hearts"><button class="btn" id="bless">Send blessings ♥</button></div>
+        <p class="bcount" id="bcount"></p>
+      </div>
+    </section>
+
+    <svg class="ill draw garland" id="ill-garland2" viewBox="0 0 640 170" aria-hidden="true"></svg>
+
+    <section class="stay reveal">
+      <h2>Where to stay</h2>
+      <p>For guests travelling to Chennai, here are a few comfortable places to stay. We recommend booking early.</p>
+      <div class="hotels">
+        <div class="hotel"><h3>Taj Coromandel</h3><p>A classic luxury stay in the heart of the city.</p><a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Taj+Coromandel+Chennai">View on map</a></div>
+        <div class="hotel"><h3>ITC Grand Chola</h3><p>Grand interiors and South Indian hospitality.</p><a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=ITC+Grand+Chola+Chennai">View on map</a></div>
+        <div class="hotel"><h3>The Park Chennai</h3><p>A stylish boutique option on Anna Salai.</p><a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=The+Park+Chennai">View on map</a></div>
+      </div>
+    </section>
+
+    <section class="final reveal">
+      <p>We can’t wait to<br>celebrate with you!</p>
+      <a class="btn" href="#rsvp">RSVP here!</a>
+      <span class="script">Ojas &amp; Prerana</span>
+    </section>
+
+    <section class="contact reveal">
+      <h3>Got questions?</h3>
+      <div><p class="script">Ojas Mishra</p><a target="_blank" rel="noopener" id="askO" href="#">Send a message</a></div>
+      <div><p class="script">Prerana Dilip</p><a target="_blank" rel="noopener" id="askP" href="#">Send a message</a></div>
+    </section>
+  </section>
+</div>
+<p class="hunt">🥚 10 little surprises are hidden in this invitation. Can you find them all? <button id="hintBtn">Need a hint?</button></p>
+<footer><a href="#top">↑ Back to the top</a><button class="fheart" id="fheart" aria-label="A little heart">♥</button></footer>
+
+<!-- easter-egg UI -->
+<div class="stars" aria-hidden="true"></div>
+<button class="badge" id="badge" aria-label="Surprises found, tap for a hint"></button>
+<div class="note" id="note" role="status"><button class="x" id="noteX" aria-label="Close">×</button><p class="nt script" id="nt"></p><p class="nb" id="nb"></p><div class="na" id="na"></div></div>
+<div class="modal" id="modal"><div class="sheet" role="dialog" aria-modal="true"><button class="x" id="modalX" aria-label="Close">×</button><div id="modalBody"></div></div></div>
+<div class="flyer" id="flyerTpl" aria-label="A flying dove, catch it!">
+  <svg class="ill vis" viewBox="-16 -22 70 44"><g class="bob"><path d="M0 10C12 0 28 0 38 8L50 4L44 13C36 23 14 25 0 10Z" fill="#fff"/><path class="wing" d="M16 8C18 -10 34 -16 46 -14C40 -6 32 2 26 9" fill="#fff"/><circle cx="41" cy="8" r="1.2"/><path d="M0 10L-12 4M0 10L-12 14M0 10L-14 9" class="soft"/></g></svg>
+</div>
+
+<button class="music" id="music" aria-label="Play or pause music"><i></i><i></i><i></i></button>
+<div class="toast" id="toast">♪ Music on · tap the button to pause</div>
+<audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+
+<script>
+/* ================= Settings ================= */
+const RSVP_PHONE = '';      // WhatsApp number for RSVPs, digits with country code, e.g. '919876543210'. Empty = guest picks the chat.
+const OJAS_PHONE = '', PRERANA_PHONE = '';   // for "Got questions?"
+const WEDDING = new Date('2027-02-02T09:00:00+05:30').getTime();
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const buzz = ms => navigator.vibrate && navigator.vibrate(ms);
+
+/* ---- Easter-egg settings (DEMO text: replace with your real details) ---- */
+const MET_DATE = '2022-06-14';   // the day you met at the office → shown on the flip calendar
+const FUN_FACT = 'They sat just a few desks apart, and “needed help with Excel” far more often than necessary.';
+const SPECIAL = {                // personal notes for ?to=<name> links (lower-case keys)
+  'dadi': 'Dadi, your blessings mean everything to us. Please come early, we need your hugs first! 🙏❤',
+  'nani': 'Nani, the wedding is not complete without your stories and your laddoos. See you there! ❤',
+  'best friend': 'You knew before anyone else did. Front-row seat reserved, no excuses! 🥂',
+};
+const params = new URLSearchParams(location.search);
+const isNight = params.has('night') || (h => h >= 23 || h < 5)(new Date().getHours());
+const isWeddingDay = params.has('today') || new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' }) === '2027-02-02';
+if (isNight) document.body.classList.add('night');
+
+/* ================= Line-art illustrations (original, drawn in code) ================= */
+const P = n => +(+n).toFixed(1);
+const leaf = (x, y, l, a) => `<path transform="translate(${P(x)} ${P(y)}) rotate(${P(a)})" d="M0 0Q${P(l / 2)} ${P(-l * .38)} ${l} 0Q${P(l / 2)} ${P(l * .38)} 0 0ZM1 0L${P(l * .8)} 0" fill="#fff" class="soft"/>`;
+const sprig = (x, y, len, ang, n = 5, bend = 10) => {
+  const r = ang * Math.PI / 180, ex = x + Math.cos(r) * len, ey = y + Math.sin(r) * len;
+  let o = `<path d="M${P(x)} ${P(y)}Q${P((x + ex) / 2 + Math.sin(r) * bend)} ${P((y + ey) / 2 - Math.cos(r) * bend)} ${P(ex)} ${P(ey)}" class="soft"/>`;
+  for (let i = 1; i <= n; i++) { const t = i / (n + .6); o += leaf(x + (ex - x) * t, y + (ey - y) * t, 8 + (n - i) * .6, ang + (i % 2 ? -48 : 48)); }
+  return o + leaf(ex, ey, 8, ang);
+};
+const flower = (x, y, r) => {
+  let o = '';
+  for (let i = 0; i < 5; i++) { const a = i * 72 * Math.PI / 180, cx = P(x + Math.cos(a) * r * .55), cy = P(y + Math.sin(a) * r * .55); o += `<ellipse cx="${cx}" cy="${cy}" rx="${P(r * .45)}" ry="${P(r * .32)}" transform="rotate(${i * 72} ${cx} ${cy})" fill="#fff" class="soft"/>`; }
+  return o + `<circle cx="${P(x)}" cy="${P(y)}" r="${P(r * .2)}" fill="#fff"/>`;
+};
+const rose = (x, y, r) => `<circle cx="${P(x)}" cy="${P(y)}" r="${P(r)}" fill="#fff"/><path class="soft" d="M${P(x - r * .55)} ${P(y + r * .1)}A${P(r * .55)} ${P(r * .55)} 0 1 1 ${P(x + r * .1)} ${P(y + r * .55)}M${P(x - r * .2)} ${P(y)}A${P(r * .22)} ${P(r * .22)} 0 1 1 ${P(x + r * .15)} ${P(y + r * .2)}"/>`;
+const heart = (x, y, s) => `<path d="M${P(x)} ${P(y + s * .9)}C${P(x - s * 1.2)} ${P(y + s * .1)} ${P(x - s * .7)} ${P(y - s * .8)} ${P(x)} ${P(y - s * .25)}C${P(x + s * .7)} ${P(y - s * .8)} ${P(x + s * 1.2)} ${P(y + s * .1)} ${P(x)} ${P(y + s * .9)}Z" fill="#fff" class="beat" style="animation-delay:-${(Math.random() * 2).toFixed(2)}s"/>`;
+const chair = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})">
+  <path d="M-16 0C-19 -48 19 -48 16 0" fill="#fff"/><path d="M-8 -35V0M0 -38V0M8 -35V0" class="soft"/>
+  <path d="M-22 0C-22 -7 22 -7 22 0C22 7 -22 7 -22 0Z" fill="#fff"/>
+  <path d="M-20 3L-23 54M20 3L23 54M-7 6L-8 48M7 6L8 48M-21 34Q0 40 21 34"/></g>`;
+const scallop = (x, y, w, h, r) => {
+  const nx = Math.round(w / (2 * r)), ny = Math.round(h / (2 * r)), sx = w / nx, sy = h / ny;
+  let d = `M${x} ${y}`;
+  for (let i = 0; i < nx; i++) d += `a${P(sx / 2)} ${P(sx / 2)} 0 0 1 ${P(sx)} 0`;
+  for (let i = 0; i < ny; i++) d += `a${P(sy / 2)} ${P(sy / 2)} 0 0 1 0 ${P(sy)}`;
+  for (let i = 0; i < nx; i++) d += `a${P(sx / 2)} ${P(sx / 2)} 0 0 1 ${P(-sx)} 0`;
+  for (let i = 0; i < ny; i++) d += `a${P(sy / 2)} ${P(sy / 2)} 0 0 1 0 ${P(-sy)}`;
+  return d + 'Z';
+};
+
+const ART = {
+  table() {
+    const yb = x => P(185 - (x - 40) * .031);
+    let o = `<path d="M40 178L600 160L620 176L58 198Z" fill="#fff"/><path d="M58 198V206L620 184V176M70 206L76 302M606 186L600 294M340 196L342 262"/>`;
+    const vase = (x, h, big) => { const b = yb(x); return `<path d="M${x - 9} ${b}C${x - 15} ${b - 18} ${x - 6} ${b - 24} ${x - 5} ${b - h}H${x + 5}C${x + 6} ${b - 24} ${x + 15} ${b - 18} ${x + 9} ${b}Z" fill="#fff"/>`
+      + `<g class="sway" style="animation-delay:-${x % 4}s">` + sprig(x, b - h, big ? 80 : 58, -100, 6) + sprig(x, b - h, big ? 66 : 48, -132, 5) + sprig(x, b - h, big ? 62 : 44, -62, 5) + sprig(x, b - h, 40, -160, 3) + sprig(x, b - h, 38, -22, 3) + '</g>'; };
+    const bottle = x => { const b = yb(x); return `<path d="M${x - 6} ${b}V${b - 30}Q${x - 6} ${b - 38} ${x - 2} ${b - 42}V${b - 54}H${x + 2}V${b - 42}Q${x + 6} ${b - 38} ${x + 6} ${b - 30}V${b}Z" fill="#fff"/><path class="soft" d="M${x - 6} ${b - 20}H${x + 6}"/>`; };
+    const candle = (x, h) => { const b = yb(x); return `<path d="M${x - 6} ${b}H${x + 6}L${x + 3} ${b - 6}H${x - 3}ZM${x - 2} ${b - 6}V${b - h}H${x + 2}V${b - 6}" fill="#fff"/><path class="flame" style="animation-delay:-${(x % 7) / 10}s" d="M${x} ${b - h - 3}q-3.5 -5 0 -11q3.5 6 0 11Z"/>`; };
+    const plate = x => { const b = yb(x) + 4; return `<ellipse cx="${x}" cy="${b}" rx="17" ry="4.5" fill="#fff"/><ellipse cx="${x}" cy="${b - .5}" rx="10" ry="2.5" class="soft"/>`; };
+    const glass = x => { const b = yb(x); return `<path d="M${x - 5} ${b - 28}Q${x - 6} ${b - 16} ${x} ${b - 15}Q${x + 6} ${b - 16} ${x + 5} ${b - 28}ZM${x} ${b - 15}V${b}M${x - 4} ${b}H${x + 4}" fill="#fff"/>`; };
+    const cake = x => { const b = yb(x); return `<path d="M${x - 30} ${b - 12}H${x + 30}M${x - 4} ${b - 12}L${x - 7} ${b}H${x + 7}L${x + 4} ${b - 12}" /><path d="M${x - 24} ${b - 12}V${b - 36}H${x + 24}V${b - 12}Z" fill="#fff"/><path class="soft" d="M${x - 24} ${b - 34}q4 6 8 0q4 6 8 0q4 6 8 0q4 6 8 0q4 6 8 0q4 6 8 0"/><path d="M${x - 15} ${b - 36}V${b - 54}H${x + 15}V${b - 36}Z" fill="#fff"/>` + rose(x - 6, b - 58, 5) + rose(x + 5, b - 57, 4) + leaf(x + 9, b - 56, 8, -20) + leaf(x - 11, b - 57, 8, 200); };
+    // easter egg: the office chai cup where it all began
+    const cup = x => { const b = yb(x); return `<g id="chai"><path class="soft" d="M${x - 10} ${b}H${x + 10}"/><path d="M${x - 6} ${b - 12}H${x + 6}L${x + 5} ${b - 3}Q${x} ${b - 1} ${x - 5} ${b - 3}Z" fill="#fff"/><path class="soft" d="M${x + 6} ${b - 10}q5 0 4 4q-1 3 -5 3"/>`
+      + `<g class="steam"><path class="soft" d="M${x - 2} ${b - 16}q-3 -5 0 -10q3 -5 0 -10"/><path class="soft" d="M${x + 2} ${b - 17}q-3 -5 0 -10q3 -5 0 -10"/><text x="${x}" y="${b - 60}" text-anchor="middle" font-family="Yellowtail" font-size="13">where it all began</text></g>`
+      + `<rect class="hit" data-egg="chai" x="${x - 18}" y="${b - 46}" width="36" height="50"/></g>`; };
+    const bowl = x => { const b = yb(x); return `<circle cx="${x - 7}" cy="${b - 13}" r="6" fill="#fff"/><circle cx="${x + 6}" cy="${b - 14}" r="6" fill="#fff"/><circle cx="${x}" cy="${b - 19}" r="6" fill="#fff"/><path d="M${x - 17} ${b - 10}Q${x} ${b + 6} ${x + 17} ${b - 10}Z" fill="#fff"/>`; };
+    o += vase(88, 34, true) + bottle(128) + bottle(142) + candle(166, 34) + plate(205) + glass(226) + candle(252, 40) + vase(290, 26)
+       + cake(345) + plate(398) + glass(420) + candle(448, 36) + cup(466) + bowl(496) + plate(530) + glass(551) + vase(585, 40, true);
+    o += chair(118, 232, 1.1) + chair(222, 228, 1.1) + chair(430, 222, 1.1) + chair(534, 218, 1.1);
+    return o;
+  },
+  arch() {
+    let o = `<path class="soft" d="M20 302H580M268 302L284 170M332 302L316 170"/>`;
+    const rows = [[230, .52, [72, 118, 164]], [272, .66, [52, 108, 164]]];
+    rows.forEach(([y, s, xs]) => xs.forEach(x => { o += chair(x, y, s) + chair(600 - x, y, s); }));
+    o += `<path d="M210 292V58M390 292V58M196 58H404M200 50H400" />`;
+    o += `<g class="drape"><path d="M206 60Q252 132 300 64Q348 132 394 60" fill="#fff"/><path class="soft" d="M300 64V100"/></g>`;
+    o += `<path d="M214 62C198 140 228 208 212 292M386 62C402 140 372 208 388 292" class="soft"/>`;
+    const cluster = (x, y, dir) => { let c = ''; [[0, 0, 11], [16 * dir, 8, 9], [-10 * dir, 12, 8], [8 * dir, -12, 8], [26 * dir, -4, 7]].forEach(([dx, dy, r]) => c += rose(x + dx, y + dy, r)); return `<g class="sway" style="animation-delay:-${(x + y) % 5}s">` + sprig(x, y, 46, dir > 0 ? 20 : 160, 4) + sprig(x, y, 40, dir > 0 ? 70 : 110, 4) + sprig(x, y, 34, dir > 0 ? -40 : 220, 3) + c + '</g>'; };
+    o += cluster(212, 62, 1) + cluster(388, 62, -1) + cluster(214, 284, 1) + cluster(386, 284, -1);
+    const urn = x => `<path d="M${x - 16} 262Q${x} 286 ${x + 16} 262Z M${x - 3} 274V284M${x - 9} 292H${x + 9}L${x + 5} 284H${x - 5}Z" fill="#fff"/><g class="sway">` + sprig(x, 262, 34, -100, 4) + sprig(x, 262, 28, -140, 3) + sprig(x, 262, 28, -40, 3) + '</g>';
+    o += urn(244) + urn(356);
+    return o;
+  },
+  cake() {
+    let o = `<ellipse cx="150" cy="150" rx="96" ry="18" fill="#fff"/>`;
+    o += `<path d="M54 152C52 200 60 228 70 246Q95 253 120 246Q150 255 180 246Q205 253 230 246C240 228 248 200 246 152" fill="#fff"/>`;
+    o += `<path class="soft" d="M90 166C88 200 92 228 98 248M120 168C119 205 121 230 122 246M180 168C181 205 179 230 178 246M210 166C212 200 208 228 202 248"/>`;
+    o += `<path class="wiggle" d="M150 174C136 160 122 166 132 178C140 186 150 178 150 174C150 178 160 186 168 178C178 166 164 160 150 174ZM146 176L136 204M154 176L166 206" fill="#fff"/>`;
+    o += `<path d="M118 142H182M146 142L143 132H157L154 142"/>`;
+    o += `<path d="M122 132V104H178V132Z" fill="#fff"/><path class="soft" d="M122 106q4 6 8 0q4 6 8 0q4 6 8 0q4 6 8 0q4 6 8 0q4 6 8 0q4 6 8 0"/>`;
+    o += `<path d="M132 104V80H168V104Z" fill="#fff"/><path d="M141 80V62H159V80Z" fill="#fff"/>`;
+    o += rose(146, 58, 6) + rose(156, 57, 5) + leaf(162, 56, 9, -25) + leaf(140, 57, 9, 205) + rose(124, 118, 4) + rose(176, 118, 4) + rose(134, 92, 3.5) + rose(166, 92, 3.5);
+    const stick = x => `<path d="M${x - 9} 146H${x + 9}L${x + 3} 138V98H${x - 3}V138Z" fill="#fff"/><path d="M${x - 2} 98V70H${x + 2}V98"/><path class="flame" style="animation-delay:-${(x % 5) / 10}s" d="M${x} 66q-3.5 -5 0 -11q3.5 6 0 11Z"/>`;
+    o += stick(84) + stick(216);
+    // easter eggs: slices that disappear, and the groom's name hidden in the cloth (like in the bride's mehendi)
+    o += `<g class="cut"><path class="nostroke" d="M150 107H164V131H150Z" fill="#fff"/><path class="soft" d="M150 107V131M164 107V131M150 119H164"/></g>`
+       + `<g class="cut"><path class="nostroke" d="M150 82H161V103H150Z" fill="#fff"/><path class="soft" d="M150 82V103M161 82V103M150 92H161"/></g>`
+       + `<g class="cut"><path class="nostroke" d="M150 64H157V79H150Z" fill="#fff"/><path class="soft" d="M150 64V79M157 64V79"/></g>`
+       + `<rect class="hit" data-egg="cake" x="112" y="48" width="76" height="98"/>`
+       + `<text class="hidden-name" x="200" y="228" font-family="Yellowtail" font-size="11" transform="rotate(-8 200 228)">Ojas</text>`;
+    return o;
+  },
+  bouquet() {
+    let o = sprig(80, 96, 62, -150, 5) + sprig(80, 96, 62, -30, 5) + sprig(80, 90, 56, -110, 4) + sprig(80, 90, 56, -70, 4);
+    o += `<path d="M52 108L80 192L108 108Z" fill="#fff"/><path class="soft" d="M66 110L80 186M94 110L80 186"/>`;
+    [[60, 84, 13], [80, 72, 14], [100, 84, 13], [70, 102, 11], [92, 102, 11]].forEach(([x, y, r]) => o += rose(x, y, r));
+    o += flower(48, 66, 8) + flower(112, 64, 8) + flower(80, 50, 7);
+    o += `<path d="M80 150C66 138 54 144 62 154C70 160 80 152 80 150C80 152 90 160 98 154C106 144 94 138 80 150ZM76 152L66 176M84 152L96 176" fill="#fff"/>`;
+    return `<g class="sway slow">${o}</g>`;
+  },
+  doves() {
+    const bird = `<path d="M0 10C12 0 28 0 38 8L50 4L44 13C36 23 14 25 0 10Z" fill="#fff"/><path class="wing" d="M16 8C18 -10 34 -16 46 -14C40 -6 32 2 26 9" fill="#fff"/><circle cx="41" cy="8" r="1.2"/><path d="M0 10L-12 4M0 10L-12 14M0 10L-14 9" class="soft"/>`;
+    let o = `<g transform="translate(30 58)"><g class="bob">${bird}</g></g><g transform="translate(170 58) scale(-1 1)"><g class="bob b2">${bird}</g></g>`;
+    o += `<path d="M82 64Q100 56 118 64" class="soft"/>` + heart(100, 96, 26) + heart(100, 96, 14);
+    o += `<path class="soft" d="M60 130Q100 150 140 130M70 136L66 146M130 136L134 146"/>` + heart(42, 126, 5) + heart(160, 120, 6) + heart(100, 34, 5);
+    return o;
+  },
+  gift() {
+    let o = `<g class="hop"><path d="M36 76H124V140H36Z" fill="#fff"/><path d="M30 60H130V76H30Z" fill="#fff"/><path d="M75 60V140M85 60V140"/>`;
+    o += `<g class="wiggle"><path d="M80 60C62 30 38 46 56 56C64 60 76 60 80 60C84 60 96 60 104 56C122 46 98 30 80 60Z" fill="#fff"/><path d="M80 60L68 44M80 60L92 44" class="soft"/></g></g>`;
+    o += heart(26, 34, 6) + heart(136, 30, 7) + heart(120, 12, 4);
+    return o;
+  },
+  garland(id) {
+    const pts = [[0, 26], [80, 54], [200, 70], [320, 44], [440, 26], [560, 52], [640, 32]];
+    let d = `M${pts[0][0]} ${pts[0][1]}`;
+    for (let i = 1; i < pts.length; i++) { const [x0, y0] = pts[i - 1], [x1, y1] = pts[i]; d += `Q${(x0 + x1) / 2} ${Math.max(y0, y1) + 14} ${x1} ${y1}`; }
+    let o = `<path d="${d}"/>`;
+    for (let i = 0; i < pts.length - 1; i++) { const [x0, y0] = pts[i], [x1, y1] = pts[i + 1]; for (let t = .2; t < 1; t += .2) { const x = x0 + (x1 - x0) * t, y = y0 + (y1 - y0) * t + Math.sin(t * Math.PI) * 9; o += leaf(x, y, 12, (t * 100 | 0) % 2 ? -40 : 220); } }
+    let lanterns = '';
+    pts.slice(1, -1).forEach(([x, y], i) => {
+      const dy = 14 + (i % 2) * 22, t = y + dy;
+      lanterns += `<g class="lantern" data-i="${i}"><path class="soft" d="M${x} ${y}V${t}"/><ellipse class="glow" cx="${x}" cy="${t + 22}" rx="14" ry="20"/>
+        <path d="M${x - 8} ${t}H${x + 8}L${x + 12} ${t + 7}H${x - 12}Z" fill="#fff"/><path d="M${x - 11} ${t + 7}L${x - 13} ${t + 38}H${x + 13}L${x + 11} ${t + 7}" /><path class="soft" d="M${x} ${t + 7}V${t + 38}M${x - 12} ${t + 22}H${x + 12}"/>
+        <path d="M${x - 13} ${t + 38}H${x + 13}L${x + 8} ${t + 45}H${x - 8}Z" fill="#fff"/><path class="soft" d="M${x} ${t + 45}V${t + 52}"/><circle cx="${x}" cy="${t - 3}" r="2.5"/></g>`;
+    });
+    return o + `<g class="lanterns">${lanterns}</g>`;
+  },
+  frame1() {
+    let o = `<path d="${scallop(22, 22, 256, 176, 6)}" fill="#fff"/><path class="soft" d="M40 40H260V180H40Z"/>`;
+    const flute = (x, y, a) => `<g transform="rotate(${a} ${x} ${y})"><g class="${a < 0 ? 'clinkL' : 'clinkR'}"><path d="M${x - 11} ${y - 70}Q${x - 12} ${y - 30} ${x} ${y - 22}Q${x + 12} ${y - 30} ${x + 11} ${y - 70}Z" fill="#fff"/><path class="soft" d="M${x - 10} ${y - 52}H${x + 10}"/><path d="M${x} ${y - 22}V${y}M${x - 9} ${y}H${x + 9}"/><circle class="soft bubble" cx="${x - 3}" cy="${y - 34}" r="1.5"/><circle class="soft bubble" cx="${x + 3}" cy="${y - 30}" r="1.2"/><circle class="soft bubble" cx="${x}" cy="${y - 38}" r="1"/></g></g>`;
+    o += flute(132, 166, -14) + flute(168, 166, 14);
+    o += `<path class="soft twinkle" d="M150 72L150 60M141 76L133 66M159 76L167 66"/>` + heart(98, 82, 7) + heart(204, 76, 8) + heart(214, 140, 5) + heart(84, 140, 5);
+    return o;
+  },
+  polaroid() {
+    let o = '<g class="sway slow">' + sprig(52, 200, 70, -120, 5) + sprig(40, 60, 46, 200, 4) + '</g><g class="sway" style="animation-delay:-2s">' + sprig(208, 200, 70, -60, 5) + sprig(222, 52, 46, -20, 4) + '</g>';
+    o += `<g transform="rotate(-4 130 120)"><g class="tilt"><path d="M50 26H210V214H50Z" fill="#fff"/><path class="soft" d="M62 38H198V170H62Z"/>`;
+    o += `<circle cx="116" cy="112" r="24"/><circle cx="144" cy="112" r="24"/><path d="M106 88L111 81H119L124 88L115 96Z" fill="#fff"/>` + heart(130, 60, 5) + heart(176, 150, 4) + heart(84, 150, 4);
+    o += `<text x="130" y="198" text-anchor="middle" font-family="Yellowtail" font-size="20">Ojas &amp; Prerana</text></g></g>`;
+    o += `<path d="M106 22L154 18L156 34L108 38Z" fill="#fff" class="soft"/>`;
+    return o;
+  },
+};
+const fill = (id, html) => { document.getElementById(id).innerHTML = `<g filter="url(#rough)">${html}</g>`; };
+fill('ill-table', ART.table()); fill('ill-arch', ART.arch()); fill('ill-cake', ART.cake()); fill('ill-bouquet', ART.bouquet());
+fill('ill-doves', ART.doves()); fill('ill-gift', ART.gift()); fill('ill-garland', ART.garland()); fill('ill-garland2', ART.garland());
+fill('ill-frame1', ART.frame1()); fill('ill-polaroid', ART.polaroid());
+document.getElementById('mapEdge').setAttribute('d', scallop(1, 1, 98, 98, 2.5));
+document.querySelectorAll('.draw').forEach(svg => {
+  const slow = svg.id === 'ill-table';   // the hero table sketches itself piece by piece
+  svg.querySelectorAll('path,circle,ellipse').forEach((el, i) => {
+    el.setAttribute('pathLength', 1);
+    el.style.transitionDelay = Math.min(i * (slow ? .028 : .012), slow ? 4.2 : 1.4) + 's';
+  });
+});
+
+/* ================= Hearts canvas (tap bursts + celebration) ================= */
+const cv = document.getElementById('fx'), cx = cv.getContext('2d');
+let parts = [], running = false;
+const HC = ['#a3161a', '#c9363b', '#f4a7a3', '#f2c9c7', '#e6b54a'];
+function size() { const k = devicePixelRatio || 1; cv.width = innerWidth * k; cv.height = innerHeight * k; cx.setTransform(k, 0, 0, k, 0, 0); }
+addEventListener('resize', size); size();
+function spawn(x, y, n, spread = 1) {
+  if (reduce) return;
+  for (let i = 0; i < n; i++) { const a = Math.random() * 6.28, sp = (1.5 + Math.random() * 3) * spread;
+    parts.push({ x, y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp - 2.5, s: 5 + Math.random() * 6, r: Math.random() - .5, vr: (Math.random() - .5) * .1, c: HC[i % HC.length], life: 1 }); }
+  if (!running) { running = true; requestAnimationFrame(tick); }
+}
+function rain(n) { for (let i = 0; i < n; i++) setTimeout(() => spawn(Math.random() * innerWidth, -10, 1, .4), i * 40); }
+function tick() {
+  cx.clearRect(0, 0, innerWidth, innerHeight);
+  parts = parts.filter(p => p.life > 0 && p.y < innerHeight + 20);
+  for (const p of parts) {
+    p.vy += .08; p.vx *= .985; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life -= .006;
+    cx.save(); cx.globalAlpha = Math.min(1, p.life * 2); cx.translate(p.x, p.y); cx.rotate(p.r); cx.fillStyle = p.c;
+    const s = p.s; cx.beginPath();
+    if (p.k === 'rice') cx.ellipse(0, 0, s * .55, s * .22, 0, 0, 6.283);
+    else if (p.k === 'petal') { cx.moveTo(0, -s); cx.quadraticCurveTo(s * .9, 0, 0, s); cx.quadraticCurveTo(-s * .9, 0, 0, -s); }
+    else { cx.moveTo(0, s * .9); cx.bezierCurveTo(-s * 1.2, s * .1, -s * .7, -s * .8, 0, -s * .25); cx.bezierCurveTo(s * .7, -s * .8, s * 1.2, s * .1, 0, s * .9); }
+    cx.fill(); cx.restore();
+  }
+  if (parts.length) requestAnimationFrame(tick); else { running = false; cx.clearRect(0, 0, innerWidth, innerHeight); }
+}
+document.addEventListener('pointerdown', e => {
+  if (!document.body.classList.contains('shown') || e.target.closest('a,button,input,textarea,iframe,.lantern,form,.hit,.hidden-name,.flyer,.modal,.note,.flip,#names')) return;
+  spawn(e.clientX, e.clientY, 8);
+});
+
+/* ================= Music: a gentle waltz (plucked strings + bells), or music.mp3 if present ================= */
+const bgm = document.getElementById('bgm'), musicBtn = document.getElementById('music'), toast = document.getElementById('toast');
+let hasFile = false, actx = null, master = null, on = false, timer = null, nextT = 0, beat = 0, noiseBuf = null;
+bgm.addEventListener('canplay', () => hasFile = true, { once: true });
+const hz = m => 440 * 2 ** ((m - 69) / 12);
+const BPM = 100, SPB = 60 / BPM;
+const CH = [[43, 59, 62, 67], [40, 59, 64, 67], [36, 60, 64, 67], [38, 57, 62, 66]];   // G · Em · C · D  (bass, then chord)
+const MEL = [[83, 0, 86], [83, 79, 0], [84, 0, 79], [81, 0, 0], [79, 81, 83], [86, 0, 83], [84, 83, 81], [78, 0, 74]];
+function ctx() {
+  if (!actx) {
+    actx = new (window.AudioContext || window.webkitAudioContext)();
+    master = actx.createGain(); master.gain.value = 0;
+    const delay = actx.createDelay(1), fb = actx.createGain(), wet = actx.createGain();
+    delay.delayTime.value = SPB * .75; fb.gain.value = .3; wet.gain.value = .25;
+    master.connect(actx.destination); master.connect(delay); delay.connect(fb).connect(delay); delay.connect(wet).connect(actx.destination);
+    noiseBuf = actx.createBuffer(1, actx.sampleRate, actx.sampleRate); const d = noiseBuf.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+  }
+  actx.resume(); return actx;
+}
+function voice(t, m, dur, vol, type, cutoff) {
+  const o = actx.createOscillator(), g = actx.createGain(); let out = o;
+  o.type = type; o.frequency.value = hz(m);
+  if (cutoff) { const f = actx.createBiquadFilter(); f.type = 'lowpass'; f.frequency.setValueAtTime(cutoff, t); f.frequency.exponentialRampToValueAtTime(300, t + dur); o.connect(f); out = f; }
+  g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t + .008); g.gain.exponentialRampToValueAtTime(.0001, t + dur);
+  out.connect(g).connect(master); o.start(t); o.stop(t + dur + .05);
+}
+const pluck = (t, m, vol) => voice(t, m, .35, vol, 'sawtooth', 2600);
+const bell = (t, m) => { voice(t, m, 1.6, .07, 'sine'); voice(t, m + 12, .7, .02, 'sine'); voice(t, m + 19.02, .25, .01, 'sine'); };
+function sched() {
+  if (nextT < actx.currentTime - .2) nextT = actx.currentTime + .05;
+  while (nextT < actx.currentTime + .4) {
+    const bar = Math.floor(beat / 3), b = beat % 3, ch = CH[bar % 4], mel = MEL[bar % 8][b];
+    if (b === 0) { voice(nextT, ch[0], SPB * 2.6, .11, 'triangle'); voice(nextT, ch[0] + 12, SPB * 1.5, .03, 'sine'); }
+    else ch.slice(1).forEach(n => pluck(nextT, n, .028));
+    if (mel) bell(nextT, mel);
+    nextT += SPB; beat++;
+  }
+}
+const playing = () => hasFile ? !bgm.paused : on;
+const sync = () => musicBtn.classList.toggle('on', playing());
+function play() {
+  if (hasFile) { bgm.volume = .6; bgm.play().catch(() => {}); return; }
+  ctx(); on = true; nextT = Math.max(nextT, actx.currentTime + .1);
+  master.gain.setTargetAtTime(.6, actx.currentTime, .4);
+  if (!timer) timer = setInterval(sched, 100); sync();
+}
+function pause() {
+  if (hasFile) { bgm.pause(); return; }
+  on = false; clearInterval(timer); timer = null; master.gain.setTargetAtTime(0, actx.currentTime, .2);
+  setTimeout(() => { if (!on) actx.suspend(); }, 800); sync();
+}
+bgm.addEventListener('play', sync); bgm.addEventListener('pause', sync);
+musicBtn.addEventListener('click', () => playing() ? pause() : play());
+let was = false;
+document.addEventListener('visibilitychange', () => { if (document.hidden) { was = playing(); if (was) pause(); } else if (was) play(); });
+function rustle(delay) {
+  const c = ctx(), t = c.currentTime + delay, s = c.createBufferSource(), f = c.createBiquadFilter(), g = c.createGain();
+  s.buffer = noiseBuf; f.type = 'bandpass'; f.Q.value = .8; f.frequency.setValueAtTime(900, t); f.frequency.exponentialRampToValueAtTime(3000, t + .5);
+  g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(.12, t + .05); g.gain.exponentialRampToValueAtTime(.0001, t + .7);
+  s.connect(f).connect(g).connect(c.destination); s.start(t, Math.random() * .3, .8);
+}
+function pop(delay) { const c = ctx(), t = c.currentTime + delay; const o = c.createOscillator(), g = c.createGain(); o.frequency.setValueAtTime(600, t); o.frequency.exponentialRampToValueAtTime(1400, t + .08); g.gain.setValueAtTime(.18, t); g.gain.exponentialRampToValueAtTime(.0001, t + .15); o.connect(g).connect(c.destination); o.start(t); o.stop(t + .2); }
+function chime(m) { if (!actx || !on) ctx(); const t = actx.currentTime; const o = actx.createOscillator(), g = actx.createGain(); o.type = 'sine'; o.frequency.value = hz(m); g.gain.setValueAtTime(.08, t); g.gain.exponentialRampToValueAtTime(.0001, t + 1.2); o.connect(g).connect(actx.destination); o.start(t); o.stop(t + 1.3); }
+
+/* ================= Envelope opener ================= */
+const intro = document.getElementById('intro');
+let opened = false;
+intro.addEventListener('click', () => {
+  if (opened) return; opened = true; buzz(20);
+  pop(0); rustle(.3); play();
+  intro.classList.add('opening');
+  setTimeout(() => { intro.classList.add('gone'); document.body.classList.add('shown'); document.body.classList.remove('locked'); rain(50); }, 2100);
+  setTimeout(() => document.getElementById('ill-table').classList.add('in'), 2600);
+  setTimeout(() => { intro.remove(); if (playing()) { toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3500); } afterOpen(); }, 3300);
+});
+
+/* ================= Lanterns: tap to light, chime ================= */
+document.querySelectorAll('.lantern').forEach(l => l.addEventListener('click', e => {
+  e.stopPropagation(); l.classList.toggle('lit'); buzz(10);
+  if (l.classList.contains('lit')) lanternOrder(l);
+  chime([79, 83, 86, 91, 95][+l.dataset.i % 5]);
+  const all = [...l.closest('svg').querySelectorAll('.lantern')];
+  if (all.every(x => x.classList.contains('lit'))) { const r = l.closest('svg').getBoundingClientRect(); spawn(r.left + r.width / 2, r.top + r.height / 2, 30, 1.4); }
+}));
+
+/* ================= Blessings ================= */
+let blessings = 0;
+document.getElementById('bless').addEventListener('click', e => {
+  blessings++; buzz(10);
+  const box = e.currentTarget.parentElement;
+  for (let k = 0; k < 3; k++) { const f = document.createElement('span'); f.className = 'float'; f.textContent = '♥';
+    f.style.setProperty('--dx', (Math.random() * 120 - 60) + 'px'); f.style.animationDelay = k * .08 + 's'; box.appendChild(f); setTimeout(() => f.remove(), 1600); }
+  document.getElementById('bcount').textContent = [10, 25, 50].includes(blessings) ? `${blessings} blessings! The couple feels the love ♥` : `You’ve sent ${blessings} blessing${blessings > 1 ? 's' : ''} ♥`;
+  if ([10, 25, 50].includes(blessings)) rain(60);
+});
+
+/* ================= Countdown ================= */
+const pad = n => String(n).padStart(2, '0');
+(function count() {
+  const t = Math.max(0, WEDDING - Date.now());
+  if (isWeddingDay) { document.getElementById('count').innerHTML = '<span><b>Today’s the day!</b>💍 see you there</span>'; return; }
+  if (!t) { document.getElementById('count').textContent = 'Just married ♥'; return; }
+  document.getElementById('cd').textContent = Math.floor(t / 864e5);
+  document.getElementById('ch').textContent = pad(Math.floor(t / 36e5) % 24);
+  document.getElementById('cm').textContent = pad(Math.floor(t / 6e4) % 60);
+  document.getElementById('cs').textContent = pad(Math.floor(t / 1e3) % 60);
+  setTimeout(count, 1000);
+})();
+
+/* ================= RSVP → WhatsApp ================= */
+const form = document.getElementById('rsvpForm'), state = { attend: 'yes', meal: 'Vegetarian' };
+let guests = 1;
+form.querySelectorAll('.opts').forEach(g => g.querySelectorAll('.opt').forEach(o => o.addEventListener('click', () => {
+  state[g.dataset.group] = o.dataset.v; buzz(8);
+  g.querySelectorAll('.opt').forEach(x => x.setAttribute('aria-checked', x === o));
+  if (g.dataset.group === 'attend') document.getElementById('moreFields').hidden = o.dataset.v !== 'yes';
+})));
+form.querySelectorAll('.stepper button').forEach(b => b.addEventListener('click', () => { guests = Math.max(1, Math.min(10, guests + +b.dataset.d)); document.getElementById('guests').textContent = guests; }));
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  if (suppressSubmit) { suppressSubmit = false; return; }   // that was a long-press (out-of-office egg)
+  const name = form.name.value.trim();
+  const text = `RSVP · Ojas & Prerana's wedding (02.02.27)\nName: ${name}\n` +
+    (state.attend === 'yes' ? `Attending: Yes, ${guests} guest${guests > 1 ? 's' : ''}\nMeal: ${state.meal}` : 'Attending: Sorry, can’t make it');
+  window.open(`https://wa.me/${RSVP_PHONE}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  document.getElementById('rsvpBox').classList.add('sent');
+  if (state.attend === 'yes') rain(60);
+});
+const ask = (id, phone, who) => document.getElementById(id).href = `https://wa.me/${phone}?text=${encodeURIComponent(`Hi ${who}, I have a question about the wedding:`)}`;
+ask('askO', OJAS_PHONE, 'Ojas'); ask('askP', PRERANA_PHONE, 'Prerana');
+
+/* ================= Personal guest link: ?to=Sharma+Family ================= */
+const guest = (new URLSearchParams(location.search).get('to') || '').trim().slice(0, 60);
+if (guest) {
+  document.getElementById('dear').textContent = `Dear ${guest},`;
+  const lead = document.getElementById('lead'); lead.textContent = '';
+  lead.append(`Dear ${guest},`, document.createElement('br'), 'you’re cordially invited to celebrate', document.createElement('br'), 'the wedding of');
+  form.name.value = guest;
+  document.title = `${guest}, you’re invited · Ojas & Prerana`;
+}
+
+/* ================= Reveal + draw-on ================= */
+const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('in'), io.unobserve(e.target))), { threshold: .2 });
+document.querySelectorAll('.reveal,.draw').forEach(el => el.id === 'ill-table' || io.observe(el));   // table waits for the envelope
+const vis = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('vis', e.isIntersecting)));
+document.querySelectorAll('.ill').forEach(el => vis.observe(el));
+
+/* =====================================================================
+   EASTER EGGS
+   ===================================================================== */
+const $ = id => document.getElementById(id);
+const store = { get: k => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+const HINTS = {
+  chai: 'Look closely at the dinner table… something is brewing ☕',
+  names: 'Our names love attention. Tap them five times.',
+  ooo: 'Press and hold the RSVP button for a moment.',
+  calendar: 'Tap the countdown under the date.',
+  shake: 'On a phone? Give it a good shake 📱 (On a computer, press R.)',
+  lanterns: 'Light the lanterns one by one, from left to right.',
+  dove: 'Keep an eye on the sky… someone flies by now and then.',
+  cake: 'That wedding cake looks delicious. Tap it a few times!',
+  mehendi: 'Brides hide the groom’s name in their mehendi… look closely at the cake’s tablecloth.',
+  secret: 'Type a four-letter word on your keyboard, or tap the little heart in the footer seven times.',
+};
+const IDS = Object.keys(HINTS);
+const got = new Set((() => { try { return JSON.parse(store.get('op-eggs') || '[]'); } catch { return []; } })());
+
+/* ---- little note cards (queued) ---- */
+const noteEl = $('note'), queue = [];
+let noteBusy = false, noteT;
+function note(title, body, action) { queue.push([title, body, action]); if (!noteBusy) nextNote(); }
+function nextNote() {
+  const it = queue.shift();
+  if (!it) { noteBusy = false; return; }
+  noteBusy = true;
+  const [t, b, a] = it;
+  $('nt').textContent = t; $('nb').textContent = b; $('na').textContent = '';
+  if (a) { const btn = document.createElement('button'); btn.className = 'btn'; btn.textContent = a.label; btn.onclick = () => { a.fn(); closeNote(); }; $('na').appendChild(btn); }
+  noteEl.classList.add('show'); clearTimeout(noteT); noteT = setTimeout(closeNote, a ? 9000 : 6000);
+}
+function closeNote() { noteEl.classList.remove('show'); clearTimeout(noteT); setTimeout(nextNote, 450); }
+$('noteX').onclick = closeNote;
+
+/* ---- modal sheet ---- */
+const modal = $('modal');
+function openModal(html) { $('modalBody').innerHTML = html; modal.classList.add('show'); }
+const closeModal = () => modal.classList.remove('show');
+$('modalX').onclick = closeModal;
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+/* ---- counter + hints ---- */
+const badge = $('badge');
+function updateBadge(pop) {
+  badge.textContent = `🥚 ${got.size}/${IDS.length}`;
+  badge.classList.toggle('show', got.size > 0);
+  if (pop) { badge.classList.remove('pop'); void badge.offsetWidth; badge.classList.add('pop'); }
+}
+function markFound(id) {
+  if (!IDS.includes(id) || got.has(id)) return false;
+  got.add(id); store.set('op-eggs', JSON.stringify([...got])); updateBadge(true); buzz([15, 30, 15]);
+  if (got.size === IDS.length) setTimeout(() => { rain(160); note('You found them all! 🏆', 'All 10 surprises! You clearly know us too well. Show this to the couple at the wedding for a big hug 🤗'); }, 800);
+  return true;
+}
+function found(id, title, body, action) { markFound(id); note(title, body, action); }
+const needsMotionPerm = typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function';
+function showHint() {
+  const id = IDS.find(i => !got.has(i));
+  if (!id) return note('Nothing left to find 🏆', 'You found all 10 surprises. See you on 2 February!');
+  note('Hint 🔍', HINTS[id], id === 'shake' && needsMotionPerm ? { label: 'Enable shake on iPhone', fn: () => DeviceMotionEvent.requestPermission().catch(() => {}) } : null);
+}
+badge.onclick = showHint; $('hintBtn').onclick = showHint;
+updateBadge();
+
+/* 1 · the office chai cup */
+document.querySelector('[data-egg="chai"]').addEventListener('click', () => {
+  const cup = $('chai'); cup.classList.toggle('on'); chime(84);
+  if (cup.classList.contains('on')) found('chai', 'Where it all began ☕', 'Their story started over office chai: two cups, one break room, and a lot of “just five more minutes”.');
+});
+
+/* 2 · tap the names five times */
+let nameTaps = 0, nameT;
+$('names').addEventListener('click', e => {
+  nameTaps++; clearTimeout(nameT); nameT = setTimeout(() => nameTaps = 0, 2500);
+  spawn(e.clientX, e.clientY, 4);
+  if (nameTaps >= 5) { nameTaps = 0; const a = $('amp'); a.textContent = '♥'; a.classList.add('heart'); chime(88); found('names', 'Fun fact 💼', FUN_FACT); }
+});
+
+/* 3 · long-press RSVP → out-of-office auto-reply */
+let suppressSubmit = false, pressT;
+const rsvpBtn = form.querySelector('[type="submit"]');
+rsvpBtn.style.webkitUserSelect = rsvpBtn.style.userSelect = 'none';
+rsvpBtn.addEventListener('contextmenu', e => e.preventDefault());
+rsvpBtn.addEventListener('pointerdown', () => {
+  pressT = setTimeout(() => {
+    suppressSubmit = true; buzz(30); markFound('ooo');
+    openModal(`<div class="mail"><p class="mh">Automatic reply</p><p class="mh"><b>From:</b> Ojas &amp; Prerana</p><p class="mh"><b>Subject:</b> Out of office 💍</p>
+      <p>Hello!</p><p>We are out of office from <b>2 February 2027</b> for a lifetime commitment, with no planned return date.</p>
+      <p>For urgent matters, please contact our mothers.<br>For everything else, see you at the wedding!</p><p class="sig">Ojas &amp; Prerana</p></div>`);
+  }, 650);
+});
+['pointerup', 'pointerleave', 'pointercancel'].forEach(t => rsvpBtn.addEventListener(t, () => clearTimeout(pressT)));
+
+/* 4 · countdown flips into the desk calendar of the day we met */
+(() => {
+  const d = new Date(MET_DATE + 'T12:00:00');
+  $('cal').innerHTML = `<span class="m">${d.toLocaleDateString('en-IN', { month: 'long' })}<br>${d.getFullYear()}</span>
+    <b class="d">${d.getDate()}<svg viewBox="0 0 60 50" preserveAspectRatio="none"><path d="M44 6C30 0 6 6 4 24C2 42 30 50 48 40C62 32 58 10 36 6"/></svg></b>
+    <span class="t">Day 1 ♥<br>the day we met</span>`;
+})();
+$('flip').addEventListener('click', () => {
+  const f = $('flip'); f.classList.toggle('on'); buzz(10);
+  if (f.classList.contains('on')) found('calendar', 'Day 1 ♥', 'Every love story has a first page. This was ours.');
+});
+
+/* 5 · shake → rice & petals (or press R on a computer) */
+function throwRice() {
+  if (reduce) return;
+  for (let i = 0; i < 90; i++) {
+    const k = i % 3 ? 'rice' : 'petal';
+    parts.push({ x: innerWidth * (.15 + Math.random() * .7), y: innerHeight + 10, vx: (Math.random() - .5) * 5, vy: -(8 + Math.random() * 6),
+      s: k === 'rice' ? 6 + Math.random() * 3 : 7 + Math.random() * 5, r: Math.random() * 6, vr: (Math.random() - .5) * .3, c: k === 'rice' ? '#d9c79c' : HC[i % HC.length], k, life: 1.2 });
+  }
+  if (!running) { running = true; requestAnimationFrame(tick); }
+  rustle(0);
+}
+let lastShake = 0;
+function shook() {
+  if (!document.body.classList.contains('shown') || Date.now() - lastShake < 1500) return;
+  lastShake = Date.now(); throwRice(); buzz(40);
+  found('shake', 'Akshat for luck! 🍚', 'In Indian weddings, rice is showered as a blessing. Thank you for blessing us!');
+}
+addEventListener('devicemotion', e => { const a = e.accelerationIncludingGravity; if (a && Math.hypot(a.x || 0, a.y || 0, a.z || 0) > 26) shook(); });
+
+/* 6 · lanterns lit left to right → a little tune and flying doves */
+function lanternOrder(l) {
+  const svg = l.closest('svg'), seq = (svg._seq ||= []);
+  seq.push(+l.dataset.i); if (seq.length > 5) seq.shift();
+  if (seq.join() === '0,1,2,3,4') {
+    svg._seq = [];
+    [79, 83, 86, 91, 86, 91, 95].forEach((m, i) => setTimeout(() => chime(m), 300 + i * 190));
+    flyDove(); setTimeout(flyDove, 900);
+    found('lanterns', 'You lit up our night ✨', 'Light leads the way, just like our families led us to each other.');
+  }
+}
+
+/* 7 · catch the dove */
+const flyerTpl = $('flyerTpl');
+function flyDove() {
+  const f = flyerTpl.cloneNode(true); f.removeAttribute('id');
+  f.style.top = (12 + Math.random() * 55) + '%';
+  document.body.appendChild(f);
+  requestAnimationFrame(() => f.classList.add('go'));
+  f.addEventListener('pointerdown', e => {
+    e.stopPropagation(); const r = f.getBoundingClientRect();
+    spawn(r.left + r.width / 2, r.top + r.height / 2, 26, 1.3); chime(91); f.remove();
+    found('dove', 'You caught love! 🕊️', 'Two doves, one heart. May your day be as lucky as this catch!');
+  });
+  setTimeout(() => f.remove(), 8000);
+}
+const scheduleDove = () => setTimeout(() => { if (!document.hidden) flyDove(); scheduleDove(); }, 22000 + Math.random() * 23000);
+
+/* 8 · eat the cake, one slice at a time */
+let slices = 0;
+document.querySelector('[data-egg="cake"]').addEventListener('click', e => {
+  const cuts = [...document.querySelectorAll('#ill-cake .cut')];
+  if (slices >= cuts.length) { cuts.forEach(c => c.classList.remove('on')); slices = 0; return note('Fresh cake! 🎂', 'Okay okay, we baked another one.'); }
+  cuts[slices++].classList.add('on'); buzz(15); spawn(e.clientX, e.clientY, 5);
+  if (slices === cuts.length) found('cake', 'Saving you a slice 😋', 'See you on 2 February, the real cake is even better!');
+});
+
+/* 11 · the groom's name hidden in the "mehendi" */
+document.querySelector('#ill-cake .hidden-name').addEventListener('click', e => {
+  e.currentTarget.classList.add('found'); spawn(e.clientX, e.clientY, 18); chime(86);
+  found('mehendi', 'You found Ojas! 🎉', 'Just like the groom hunting for his name in the bride’s mehendi. He might need your help on the day!');
+});
+
+/* 12 · secret word "love" or seven taps on the footer heart */
+function secret() {
+  markFound('secret'); rain(80);
+  openModal(`<div class="letter"><h3>A little note from us</h3>
+    <p>If you found this, you read every corner of our invitation, just like we read every corner of each other’s hearts (and emails).</p>
+    <p>Thank you for being part of our story. It means more than you know, and we can’t wait to celebrate with you.</p>
+    <p class="sig">With love, Ojas &amp; Prerana</p></div>`);
+}
+let typed = '';
+addEventListener('keydown', e => {
+  if (e.target.closest && e.target.closest('input,textarea')) return;
+  typed = (typed + e.key.toLowerCase()).slice(-4);
+  if (typed === 'love') { typed = ''; secret(); }
+  if (e.key.toLowerCase() === 'r' && !e.metaKey && !e.ctrlKey) shook();
+});
+let heartTaps = 0, heartT;
+$('fheart').addEventListener('click', () => {
+  heartTaps++; clearTimeout(heartT); heartT = setTimeout(() => heartTaps = 0, 4000); buzz(8);
+  if (heartTaps >= 7) { heartTaps = 0; secret(); }
+});
+
+/* 9 · midnight mode, 10 · wedding-day surprise, 13 · personal notes */
+if (isNight || isWeddingDay) document.querySelectorAll('.lantern').forEach(l => l.classList.add('lit'));
+function afterOpen() {
+  scheduleDove();
+  if (isNight) setTimeout(() => note('Still awake? 🌙', 'Go to sleep, the wedding needs you well rested 😴'), 1200);
+  if (isWeddingDay) { rain(140); setTimeout(() => note('It’s wedding day! 💍', 'See you at Ramakrishna Mandir. Today we become Mr & Mrs!'), 1200); }
+  const special = SPECIAL[guest.toLowerCase()];
+  if (special) setTimeout(() => note('A note just for you ✉️', special), 1800);
+}
+</script>
+</body>
+</html>

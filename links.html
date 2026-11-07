@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Guest Link Maker · Ojas &amp; Prerana</title>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#fff;--cream:#fdf3f2;--olive:#a3161a;--olive-d:#7f0f13;--ink:#a3161a;--muted:#b35a5d;--line:rgba(163,22,26,.25)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:'Gaegu',cursive;font-size:18px;padding:32px 16px 60px}
+  main{max-width:720px;margin:0 auto}
+  h1{font-weight:400;font-size:28px;letter-spacing:.24em;text-transform:uppercase;text-align:center}
+  h1 span{font-family:'Yellowtail',cursive;text-transform:none;letter-spacing:0;color:#a3161a;font-size:1.2em}
+  .sub{text-align:center;font-style:italic;color:var(--muted);margin:6px 0 28px}
+  label{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+  textarea,input{width:100%;font:inherit;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--cream);color:var(--ink);outline:none}
+  textarea:focus,input:focus{border-color:var(--olive)}
+  .hint{font-size:14px;color:var(--muted);margin-top:4px}
+  .btn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:11px 22px;border-radius:999px;border:1px solid var(--olive);background:var(--olive);color:#f6f3ea;
+       font:600 11.5px 'Cormorant Garamond',serif;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;text-decoration:none}
+  .btn:hover{background:var(--olive-d)}
+  .btn.ghost{background:none;color:var(--olive)}
+  .btn.ghost:hover{background:var(--olive);color:#f6f3ea}
+  .btn.sm{margin:0;padding:8px 14px;font-size:10.5px}
+  table{width:100%;border-collapse:collapse;margin-top:26px}
+  td{padding:12px 6px;border-top:1px solid var(--line);vertical-align:middle}
+  td.name{font-weight:500;width:28%}
+  td.link input{font-size:14px;padding:8px 10px}
+  td.act{white-space:nowrap;text-align:right}
+  td.act .btn{margin-left:6px}
+  .bar{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+  @media (max-width:600px){
+    tr{display:grid;grid-template-columns:1fr auto;gap:8px;border-top:1px solid var(--line);padding:12px 0}
+    td{border:0;padding:0} td.name{width:auto} td.link{grid-column:1/-1;grid-row:2} td.act{grid-row:1;grid-column:2}
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Guest <span>Link</span> Maker</h1>
+  <p class="sub">Make a personal invitation link for every family</p>
+
+  <label for="names">Guest names: one per line</label>
+  <textarea id="names" rows="6" placeholder="Sharma Family&#10;Rahul &amp; Neha&#10;Dr. Iyer"></textarea>
+
+  <label for="base">Invitation address</label>
+  <input id="base">
+  <p class="hint">After you upload the site, change this to its real address (for example https://ojas-prerana.netlify.app/).</p>
+
+  <label for="msg">WhatsApp message</label>
+  <textarea id="msg" rows="3">Dear {name}, with great joy we invite you to our wedding on 2 February 2027 💐 Please open your invitation: {link}</textarea>
+  <p class="hint">{name} and {link} are filled in for each guest.</p>
+
+  <div class="bar">
+    <button class="btn" id="make">Make links</button>
+    <button class="btn ghost" id="copyAll" hidden>Copy all as list</button>
+  </div>
+
+  <table><tbody id="out"></tbody></table>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const store = { get: k => { try { return localStorage.getItem(k) } catch { return null } }, set: (k, v) => { try { localStorage.setItem(k, v) } catch {} } };
+$('base').value = store.get('base') || location.href.replace(/links\.html.*$/, '');
+$('names').value = store.get('names') || '';
+const linkFor = name => {
+  const u = new URL($('base').value.trim() || location.href.replace(/links\.html.*$/, ''));
+  u.searchParams.set('to', name);
+  return u.toString();
+};
+let rows = [];
+function make() {
+  store.set('base', $('base').value); store.set('names', $('names').value);
+  rows = $('names').value.split('\n').map(s => s.trim()).filter(Boolean).map(name => ({ name, link: linkFor(name) }));
+  const out = $('out'); out.textContent = '';
+  rows.forEach(({ name, link }) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="name"></td><td class="link"><input readonly></td><td class="act"><button class="btn ghost sm">Copy</button><a class="btn sm" target="_blank" rel="noopener">WhatsApp</a></td>';
+    tr.querySelector('.name').textContent = name;
+    const inp = tr.querySelector('input'); inp.value = link; inp.onclick = () => inp.select();
+    const copy = tr.querySelector('button');
+    copy.onclick = async () => { try { await navigator.clipboard.writeText(link); } catch { inp.select(); document.execCommand('copy'); } copy.textContent = 'Copied ✓'; setTimeout(() => copy.textContent = 'Copy', 1500); };
+    tr.querySelector('a').href = 'https://wa.me/?text=' + encodeURIComponent($('msg').value.replaceAll('{name}', name).replaceAll('{link}', link));
+    out.appendChild(tr);
+  });
+  $('copyAll').hidden = !rows.length;
+}
+$('make').onclick = make;
+$('copyAll').onclick = async () => {
+  const text = rows.map(r => `${r.name}: ${r.link}`).join('\n');
+  try { await navigator.clipboard.writeText(text); $('copyAll').textContent = 'Copied ✓'; setTimeout(() => $('copyAll').textContent = 'Copy all as list', 1500); } catch {}
+};
+if ($('names').value) make();
+</script>
+</body>
+</html>
